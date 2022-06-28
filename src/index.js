@@ -5,7 +5,7 @@ const bodyparser = require('body-parser');
 app.use(bodyparser.urlencoded({extended: true}));
 
 
-app.use('/public',express.static('public'));
+app.use(express.static(staticPath));
 
 
 app.get("/",function(req,res){
