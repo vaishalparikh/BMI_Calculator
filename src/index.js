@@ -1,10 +1,11 @@
+const path = require("path");
 const express = require('express');
 const app =express();
 const bodyparser = require('body-parser');
 
 app.use(bodyparser.urlencoded({extended: true}));
 
-
+const staticPath = path.join(__dirname,'../public');
 app.use(express.static(staticPath));
 
 
@@ -33,5 +34,5 @@ else if(BMI>= 40.0){
 
 
 app.listen(3000, function(){
-    console.log("Server Is Working");
+    console.log("Listing the port at 3000");
 })
