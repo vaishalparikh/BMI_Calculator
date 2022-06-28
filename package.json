@@ -1,0 +1,15 @@
+{
+  "name": "node_js",
+  "version": "1.0.0",
+  "description": "BMI cal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vaishal Parikh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
+  }
+}
